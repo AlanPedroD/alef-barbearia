@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+}
+
+body{
+    background-color: #382C28;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: auto;
+    padding: 25px;
+}
+
+.cabecalho img{
+    width: 130px;
+}
+
+main{
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+    background: url(./imagens/corte-cabelo-02.jpg) no-repeat;
+    height: 670px;
+}
+
+.img-principal{
+    display: none;
+}
+
+.contato{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #382C28;;
+}
+
+.contato a{
+    color: #FD5308;
+}
+
+@media(max-width: 425px){
+    main{
+        background: none;
+    }
+    .cabecalho img{
+        width: 100px;
+    }
+    .img-principal{
+        display: block;
+        text-align: center;
+    }
+    .img-principal img{
+        width: 150px;
+    }
+
+    .contato{
+        position: relative;
+        margin-top: 30px;
+        text-align: center;
+        left: 0;
+    }
+    
+    main{
+        position: fixed;
+    }
+
+    .cabecalho{
+        flex-direction: column;
+    }
+    .cabecalho img{
+        display: none;
+    }
+}
