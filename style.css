@@ -43,6 +43,7 @@ main{
     display: flex;
     flex-direction: column;
     line-height: 30px;
+    margin-top: 20px;
 }
 
 .contato{
