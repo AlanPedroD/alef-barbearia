@@ -39,6 +39,12 @@ main{
     display: none;
 }
 
+.valores{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
 .contato{
     position: absolute;
     bottom: 20px;
